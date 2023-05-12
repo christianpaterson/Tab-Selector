@@ -1,0 +1,50 @@
+.container, .container-2 {
+    width: 80%;
+    height: 50%;
+    border: 1px solid grey;
+    margin: 5% auto 0;
+    background-color: #8DCCDD;
+}
+
+.selector, .selector-2 {
+    display: flex;
+    border-bottom: 1px solid grey;
+    background-color: #f3d2c1;
+}
+
+.tab, .tab-2 {
+    padding: 15px;
+    transition: .3s ease all;
+}
+
+.tab:hover, .tab-2:hover {
+    cursor: pointer;
+    background-color: #f5aaaa;
+    transition: .3s ease all;
+}
+
+.tab-active, .tab-2-active {
+    background-color: #f5aaaa;
+}
+
+.content, .content-2 {
+    padding: 10px;
+}
+
+.content-body, .content-body-2 {
+    display: none;
+}
+
+.content-active, .content-2-active {
+    display: block;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
